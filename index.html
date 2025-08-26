@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>My Fancy Portfolio</title>
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #000000, #535155);
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         header {
             text-align: center;
-            padding: 60px 20px 30px 20px;
+            padding: 20px;
         }
         header h1 {
             font-size: 3em;
@@ -85,6 +90,24 @@
             font-size: 1em;
             color: #eee;
         }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-me {
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+            max-width: 600px;
+        }
+        @media (min-width: 601px) {
+            .about-me {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left;
+            }
+        }
         @media (max-width: 600px) {
             header h1 { font-size: 2em; }
             .container { padding: 20px 10px; }
@@ -94,22 +117,55 @@
 </head>
 <body>
     <header>
-        <h1>Hi! I'm James Paul L. Panal</h1>
-        <p>Aspiring developer & designer</p>
+    <img src="james.jpg" alt="My Picture" style="width:150px;height:150px;border-radius:50%;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+    <h1>Hi! I'm James Paul L. Panal</h1>
+    <p>Aspiring developer & designer</p>
     </header>
 
+    <div class="container">
     <h2 style="margin-left:20px;">About Me</h2>
-    <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;">
+    <div class="about-me" style="margin-left:20px; margin-right:20px; margin-bottom:20px;">
         <p>I am a 3rd year college student at LAGUNA STATE POLYTECHNIC UNIVERSITY, taking up Bachelor of Science in Computer Science. I want to learn more about web development and design and improve my skills in these areas.</p>
+    </div>
+    <h2 style="margin-left:20px;">Specialization</h2>
+    <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;">
+        <p>My specialization includes Web Development, UI/UX Design, and building modern, responsive websites and applications.</p>
+    </div>
+    <h2 style="margin-left:20px;">Education</h2>
+    <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;">
+        <p><strong>Laguna State Polytechnic University</strong><br>
+        Bachelor of Science in Computer Science<br>
+        3rd Year College Student</p>
+    </div>
+
+    <h2 style="margin-left:20px;">Skills</h2>
+    <div class="skills" style="margin-left:20px; margin-bottom:20px;">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+       <!-- <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">UI/UX Design</div>
+        <div class="skill">Responsive Web Design</div>
+        -->
+    </div>
+
+    <h2 style="margin-left:20px;">Achievements</h2>
+    <div style="margin-left:20px; margin-right:20px; margin-bottom:20px;">
+        <ul>
+            <li>Dean's Lister - 2023</li>
+            <li>Completed Web Development Bootcamp</li>
+            <li>Active Member, Computer Science Society</li>
+        </ul>
     </div>
 
     <h2 style="margin-left:20px;">Projects</h2>
     <div class="projects" style="margin-left:20px; margin-right:20px;">
         <div class="project-card">
-            <div class="project-title">Awesome App</div>
+            <div class="project-title">E-commerce</div>
             <div class="project-desc">A modern web application that solves real-world problems with style.</div>
             <a class="project-link" href="#" target="_blank">View Project</a>
         </div>
+        <!--
         <div class="project-card">
             <div class="project-title">Portfolio Website</div>
             <div class="project-desc">A sleek, responsive portfolio to showcase my work and skills.</div>
@@ -120,6 +176,12 @@
             <div class="project-desc">Reusable UI components for fast and consistent development.</div>
             <a class="project-link" href="#" target="_blank">View Project</a>
         </div>
+        <div class="project-card">
+            <div class="project-title">Ecommerce Ordering Website</div>
+            <div class="project-desc">A group project where we created a fully functional ecommerce ordering website using HTML, CSS, and JavaScript. Features include product browsing, cart management, and order processing.</div>
+            <a class="project-link" href="#" target="_blank">View Project</a>
+        </div>
+        -->
     </div>
     <!--
     <h2 style="margin-left:20px;">Skills</h2>
@@ -134,12 +196,19 @@
 -->
     <h2 style="margin-left:20px;">Contact</h2>
     <div style="margin-left:20px; margin-bottom:40px;">
-        <p>Email: <a href="mailto:your.email@example.com" style="color:#ffd86b;">jppanal20@gmail.com</a></p>
-        <p>LinkedIn: <a href="#" style="color:#ffd86b;">linkedin.com/in/yourprofile</a></p>
+        <p>Gmail: <a href="mailto:your.email@example.com" style="color:#ffd86b;">jppanal20@gmail.com</a></p>
+    <p>LinkedIn: <a href="#" style="color:#ffd86b;" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/james.p820/" style="color:#ffd86b;" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd86b" style="vertical-align:middle; margin-right:6px;"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.325-.593 1.325-1.326v-21.349c0-.733-.592-1.325-1.325-1.325z"/></svg>
+            facebook.com/james.p820
+        </a></p>
+        <p>Number: <a href="#" style="color:#ffd86b;">09205818072</a></p>
+    <p>Github: <a href="https://github.com/jameszxc2" style="color:#ffd86b;" target="_blank">jameszxc2</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/santiizxc/" style="color:#ffd86b;" target="_blank">santiizxc</a></p>
+    </div>
     </div>
     <footer>
-        
+        &copy; 2024 Your Name. All rights reserved.
     </footer>
 </body>
-
 </html>
